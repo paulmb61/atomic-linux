@@ -37,16 +37,14 @@ modules:
     install:
       - Dash to Dock
       
-  - type: dconf
+  - type: gschema-overrides
     settings:
-      # Forza le cartelle in cima su Nautilus e nei menu di salvataggio
       org/gnome/nautilus/preferences:
         sort-directories-first: true
       org/gtk/Settings/FileChooser:
         sort-directories-first: true
       org/gtk/gtk4/Settings/FileChooser:
         sort-directories-first: true
-      
       org/gnome/shell/extensions/dash-to-dock:
         dock-position: "'BOTTOM'"
         dock-fixed: false
