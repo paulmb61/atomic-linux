@@ -25,6 +25,8 @@ modules:
       packages:
         - lact
         - gparted
+        - seahorse
+        - gnome-text-editor
     remove:
       packages:
         - gnome-software
