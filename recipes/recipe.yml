@@ -33,6 +33,26 @@ modules:
         - firefox
         - firefox-langpacks
 
+  - type: gnome-extensions
+    install:
+      - Dash to Dock
+      
+  - type: dconf
+    settings:
+      # Forza le cartelle in cima su Nautilus e nei menu di salvataggio
+      org/gnome/nautilus/preferences:
+        sort-directories-first: true
+      org/gtk/Settings/FileChooser:
+        sort-directories-first: true
+      org/gtk/gtk4/Settings/FileChooser:
+        sort-directories-first: true
+      
+      org/gnome/shell/extensions/dash-to-dock:
+        dock-position: "'BOTTOM'"
+        dock-fixed: false
+        intellihide: true
+        autohide: true
+
   - type: default-flatpaks
     configurations:
       - notify: true # Send notification after install/uninstall is finished (true/false)
@@ -48,6 +68,7 @@ modules:
           - org.gimp.GIMP
           - ca.desrt.dconf-editor
           - io.gitlab.adhami3310.Impression
+          - com.mattjakeman.ExtensionManager
       - scope: user # Also add Flathub user repo, but no user packages
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
