@@ -28,6 +28,8 @@ modules:
     remove:
       packages:
         - gnome-software
+        - firefox
+        - firefox-langpacks
 
   - type: default-flatpaks
     configurations:
@@ -35,6 +37,7 @@ modules:
         scope: system
         # If no repo information is specified, Flathub will be used by default
         install: # system flatpaks we want all users to have and not remove
+          - org.mozilla.firefox
           - io.github.kolunmi.Bazaar
           - com.ranfdev.DistroShelf
           - com.github.tchx84.Flatseal
