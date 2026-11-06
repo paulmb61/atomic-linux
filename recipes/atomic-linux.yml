@@ -28,6 +28,7 @@ modules:
         - seahorse
         - gnome-text-editor
         - gnome-tweaks
+        - gnome-calculator
         - yaru-theme
     remove:
       packages:
