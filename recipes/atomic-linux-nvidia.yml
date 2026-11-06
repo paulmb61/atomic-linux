@@ -27,6 +27,7 @@ modules:
         - gparted
         - seahorse
         - gnome-text-editor
+        - gnome-tweaks
     remove:
       packages:
         - gnome-software
