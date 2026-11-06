@@ -30,6 +30,7 @@ modules:
         - gnome-tweaks
         - gnome-calculator
         - yaru-theme
+        - github-cli
     remove:
       packages:
         - gnome-software
